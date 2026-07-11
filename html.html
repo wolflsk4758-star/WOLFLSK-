@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Wolf LSK Agency | شريكك الأقوى للهيمنة على السوق الرقمي</title>
+    <meta name="title" content="Wolf LSK Agency | شريكك الأقوى للهيمنة على السوق الرقمي">
+    <meta name="description" content="وكالة Wolf LSK للتسويق الرقمي. نبتكر استراتيجيات SEO وإدارة حملات إعلانية احترافية تضع علامتك التجارية في الصدارة وتتفوق على المنافسين.">
+    <meta name="keywords" content="تسويق رقمي, وكالة تسويق, حملات إعلانية, سوشيال ميديا, Wolf LSK, إدارة حسابات, سيو, SEO, الأردن, تسويق إلكتروني, زيادة المبيعات">
+    <meta name="author" content="Wolf LSK Agency">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wolflsk.online/">
+    <meta property="og:title" content="Wolf LSK Agency | استراتيجيات بهيبة الذئب">
+    <meta property="og:description" content="ارتقِ بعلامتك التجارية مع أقوى وكالة تسويق رقمي. إدارة حملات، سوشيال ميديا، وتصدر نتائج البحث SEO.">
+    <meta property="og:image" content="تصميم بدون عنوان (11).jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                        en: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        wolf: {
+                            black: '#030303',
+                            dark: '#0a0a0a',
+                            gray: '#1a1a1a',
+                            fire: '#ff5100',
+                            ember: '#ffaa00',
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #030303;
+            color: #ffffff;
+            overflow-x: hidden;
+            cursor: none;
+        }
+        
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #030303; }
+        ::-webkit-scrollbar-thumb { background: #ff5100; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #ffaa00; }
+
+        .cursor-dot {
+            width: 8px; height: 8px;
+            background: #ff5100;
+            border-radius: 50%;
+            position: fixed;
+            top: 0; left: 0;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: width 0.2s, height 0.2s, background-color 0.2s;
+        }
+        .cursor-outline {
+            width: 40px; height: 40px;
+            border: 1px solid rgba(255, 81, 0, 0.5);
+            border-radius: 50%;
+            position: fixed;
+            top: 0; left: 0;
+            pointer-events: none;
+            z-index: 9998;
+            transform: translate(-50%, -50%);
+            transition: width 0.2s, height 0.2s, background-color 0.2s;
+            transition-duration: 100ms;
+            transition-timing-function: ease-out;
+        }
+        @media (max-width: 768px) {
+            body { cursor: auto; }
+            .cursor-dot, .cursor-outline { display: none; }
+        }
+
+        #network-canvas {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: 0;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .nav-glass {
+            background: rgba(3, 3, 3, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .text-glow {
+            background: linear-gradient(135deg, #ff5100 0%, #ffaa00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0px 0px 30px rgba(255,81,0,0.3);
+        }
+
+        .text-shine {
+            background: linear-gradient(to right, #4a4a4a 20%, #ffffff 40%, #ffffff 60%, #4a4a4a 80%);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: shine 3s linear infinite;
+        }
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        .spotlight-card {
+            background: rgba(26, 26, 26, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1.5rem;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .spotlight-card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border-radius: 1.5rem;
+            padding: 2px;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+            transition: background 0.3s ease;
+        }
+        .spotlight-overlay {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255, 81, 0, 0.15), transparent 40%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .spotlight-card:hover .spotlight-overlay { opacity: 1; }
+        .spotlight-card:hover { transform: translateY(-5px); }
+        .spotlight-card:hover .icon-wrapper i { transform: scale(1.2); text-shadow: 0 0 15px #ff5100; }
+
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+
+        .float-anim { animation: floating 6s ease-in-out infinite; }
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .logo-glow {
+            box-shadow: 0 0 40px rgba(255, 81, 0, 0.3), inset 0 0 20px rgba(255, 81, 0, 0.2);
+            transition: all 0.5s ease;
+        }
+        .logo-glow:hover {
+            box-shadow: 0 0 60px rgba(255, 81, 0, 0.6), inset 0 0 30px rgba(255, 81, 0, 0.4);
+            transform: scale(1.02);
+        }
+
+        @keyframes fire-pulse {
+            0% { transform: scale(0.95); opacity: 0.6; filter: blur(20px); background: radial-gradient(circle, rgba(255,81,0,0.8) 0%, rgba(255,0,0,0.4) 50%, transparent 70%); }
+            50% { transform: scale(1.1); opacity: 1; filter: blur(25px); background: radial-gradient(circle, rgba(255,170,0,0.9) 0%, rgba(255,81,0,0.6) 60%, transparent 80%); }
+            100% { transform: scale(0.95); opacity: 0.6; filter: blur(20px); background: radial-gradient(circle, rgba(255,81,0,0.8) 0%, rgba(255,0,0,0.4) 50%, transparent 70%); }
+        }
+        .fire-aura {
+            position: absolute;
+            inset: -30px;
+            border-radius: 50%;
+            animation: fire-pulse 2s infinite ease-in-out;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .modal-backdrop { opacity: 0; transition: opacity 0.3s ease-out; }
+        .modal-content { opacity: 0; transform: scale(0.95) translateY(20px); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MarketingAgency",
+      "name": "Wolf LSK Agency",
+      "image": "تصميم بدون عنوان (11).jpg",
+      "@id": "https://wolflsk.online/",
+      "url": "https://wolflsk.online/",
+      "telephone": "+962782456543",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "الأردن",
+        "addressLocality": "عمان",
+        "addressCountry": "JO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 31.9539,
+        "longitude": 35.9106
+      },
+      "sameAs": [
+        "https://web.facebook.com/wolf.lsk.sms/",
+        "https://www.instagram.com/wolf_lsk"
+      ],
+      "description": "وكالة تسويق رقمي متخصصة في إدارة الحملات الإعلانية، السوشيال ميديا، وتصدر محركات البحث SEO في الأردن والوطن العربي."
+    }
+    </script>
+</head>
+<body class="antialiased selection:bg-wolf-fire selection:text-white">
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="fixed w-full z-50 nav-glass transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex-shrink-0 flex items-center cursor-pointer gap-4 group">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-wolf-fire rounded-full blur-md opacity-40 group-hover:opacity-80 transition-opacity"></div>
+                        <img src="تصميم بدون عنوان (11).jpg" alt="Wolf LSK" class="relative h-14 w-14 rounded-full border border-gray-700">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-en text-2xl font-black tracking-[0.2em] text-white leading-none">
+                            WOLF<span class="text-wolf-fire">LSK</span>
+                        </span>
+                        <span class="text-[10px] text-gray-400 tracking-widest uppercase mt-1 font-en">Digital Agency</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-10 space-x-reverse items-center">
+                    <a href="#home" class="text-sm font-bold text-gray-300 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:right-0 after:w-0 after:h-[2px] after:bg-wolf-fire hover:after:w-full after:transition-all after:duration-300">الرئيسية</a>
+                    <a href="#philosophy" class="text-sm font-bold text-gray-300 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:right-0 after:w-0 after:h-[2px] after:bg-wolf-fire hover:after:w-full after:transition-all after:duration-300">منهجيتنا</a>
+                    <a href="#services" class="text-sm font-bold text-gray-300 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:right-0 after:w-0 after:h-[2px] after:bg-wolf-fire hover:after:w-full after:transition-all after:duration-300">خدماتنا</a>
+                    <a href="#portfolio" class="text-sm font-bold text-gray-300 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:right-0 after:w-0 after:h-[2px] after:bg-wolf-fire hover:after:w-full after:transition-all after:duration-300">معرض الأعمال</a>
+                    <a href="#payment" class="text-sm font-bold text-gray-300 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:right-0 after:w-0 after:h-[2px] after:bg-wolf-fire hover:after:w-full after:transition-all after:duration-300">بوابة الدفع</a>
+                    
+                    <a href="https://wa.me/962782456543" target="_blank" class="relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-bold text-white bg-wolf-black border border-wolf-fire rounded-full group hover:shadow-[0_0_20px_rgba(255,81,0,0.4)] transition-all">
+                        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-wolf-fire rounded-full group-hover:w-56 group-hover:h-56"></span>
+                        <span class="relative flex items-center gap-2">
+                            ابدأ مشروعك <i class="fab fa-whatsapp text-lg"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-wolf-dark/95 backdrop-blur-lg border-t border-gray-800 absolute w-full">
+            <div class="px-4 py-6 space-y-4 text-center">
+                <a href="#home" class="block px-3 py-3 text-lg text-gray-300 hover:text-wolf-fire font-medium border-b border-gray-800">الرئيسية</a>
+                <a href="#philosophy" class="block px-3 py-3 text-lg text-gray-300 hover:text-wolf-fire font-medium border-b border-gray-800">منهجيتنا</a>
+                <a href="#services" class="block px-3 py-3 text-lg text-gray-300 hover:text-wolf-fire font-medium border-b border-gray-800">خدماتنا</a>
+                <a href="#portfolio" class="block px-3 py-3 text-lg text-gray-300 hover:text-wolf-fire font-medium border-b border-gray-800">معرض الأعمال</a>
+                <a href="#payment" class="block px-3 py-3 text-lg text-gray-300 hover:text-wolf-fire font-medium border-b border-gray-800">بوابة الدفع</a>
+                <a href="https://wa.me/962782456543" target="_blank" class="inline-block mt-4 bg-wolf-fire text-white px-8 py-3 rounded-full font-bold w-full">
+                    <i class="fab fa-whatsapp mr-2"></i> تواصل معنا
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-fixed" style="background-image: url('نسخة من Black Elegant Design Motivational Quote Facebook Video (2560 x 1440 بيكسل).jpg');">
+        
+        <div class="absolute inset-0 bg-wolf-black/60 z-0"></div>
+        <div class="absolute inset-0 bg-gradient-radial from-transparent via-wolf-black/80 to-wolf-black z-0"></div>
+
+        <canvas id="network-canvas" class="z-0"></canvas>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-16 pt-20">
+                
+                <!-- Text Content (Right Side) -->
+                <div class="lg:w-3/5 text-center lg:text-right reveal-up">
+                    <div class="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-wolf-fire/50 bg-wolf-fire/10 backdrop-blur-md mb-8 shadow-[0_0_20px_rgba(255,81,0,0.2)]">
+                        <span class="text-base md:text-lg font-black text-wolf-ember tracking-wider">في غيرنا.. بس ما في زينا 🔥</span>
+                    </div>
+                    
+                    <h1 class="text-5xl lg:text-7xl font-black mb-6 leading-[1.2] drop-shadow-2xl text-white">
+                        نهيمن على المشهد الرقمي<br>
+                        <span class="text-glow">لتكون أنت في الصدارة.</span>
+                    </h1>
+                    
+                    <p class="text-lg lg:text-xl text-gray-400 mb-10 font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        في <strong class="text-white font-en">Wolf LSK</strong>، ندمج غريزة الابتكار مع أحدث استراتيجيات الـ <span class="font-en text-wolf-fire font-bold">SEO</span> والتسويق لنبني لعلامتك التجارية مجداً لا يُنافس. اترك المنافسين خلفك، واستعد لقيادة السوق.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
+                        <a href="https://wa.me/962782456543" target="_blank" class="bg-wolf-fire text-white px-8 py-4 rounded-full font-bold text-lg transition-transform transform hover:scale-105 shadow-[0_0_30px_rgba(255,81,0,0.3)] flex items-center justify-center gap-3">
+                            احجز استشارتك المجانية <i class="fas fa-arrow-left mt-1"></i>
+                        </a>
+                        <a href="#services" class="text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-3 hover:text-wolf-ember transition-colors group">
+                            اكتشف استراتيجياتنا 
+                            <div class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center group-hover:border-wolf-ember transition-colors">
+                                <i class="fas fa-chevron-down text-sm"></i>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- شريط الاعتمادات (Google & Meta Partners) -->
+                    <div class="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-6 border-t border-gray-800/50 reveal-up delay-200">
+                        <div class="flex items-center gap-3 bg-black/50 border border-gray-800 px-5 py-2.5 rounded-full backdrop-blur-md hover:border-gray-600 transition-colors cursor-default">
+                            <i class="fab fa-google text-[#4285F4] text-xl"></i>
+                            <div class="flex flex-col">
+                                <span class="text-[10px] text-gray-500 tracking-wider">شهادة معتمدة</span>
+                                <span class="text-xs sm:text-sm font-bold text-gray-200">شريك <span class="font-en text-white">Google Ads</span></span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-black/50 border border-gray-800 px-5 py-2.5 rounded-full backdrop-blur-md hover:border-gray-600 transition-colors cursor-default">
+                            <i class="fab fa-meta text-[#0668E1] text-xl"></i>
+                            <div class="flex flex-col">
+                                <span class="text-[10px] text-gray-500 tracking-wider">شهادة معتمدة</span>
+                                <span class="text-xs sm:text-sm font-bold text-gray-200">خبراء <span class="font-en text-white">Meta Business</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image/Logo Presentation (Left Side) -->
+                <div class="lg:w-2/5 flex justify-center reveal-up delay-200 mt-12 lg:mt-0 relative">
+                    <div class="relative w-72 h-72 lg:w-96 lg:h-96 float-anim flex items-center justify-center">
+                        
+                        <!-- Fire Aura Background -->
+                        <div class="fire-aura"></div>
+                        
+                        <!-- Abstract Fiery Rings -->
+                        <div class="absolute inset-0 rounded-full border-[2px] border-dashed border-wolf-fire/50 animate-[spin_15s_linear_infinite] z-10"></div>
+                        <div class="absolute inset-4 rounded-full border-[1.5px] border-wolf-ember/70 animate-[spin_10s_linear_infinite_reverse] z-10" style="filter: blur(1px);"></div>
+                        <div class="absolute inset-[-15px] rounded-full border-[1px] border-wolf-fire/30 animate-[pulse_2s_ease-in-out_infinite] z-10"></div>
+                        
+                        <!-- Main Animated Logo -->
+                        <img src="تصميم بدون عنوان (11).jpg" alt="Wolf LSK Mascot" class="relative w-[calc(100%-4rem)] h-[calc(100%-4rem)] object-cover rounded-full z-20 border-[3px] border-black shadow-[0_0_60px_rgba(255,81,0,0.8)] transition-transform duration-500 hover:scale-105">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce opacity-50 z-10 hidden md:flex">
+            <span class="text-xs text-gray-400 mb-2 font-en tracking-widest uppercase">Scroll</span>
+            <div class="w-[1px] h-10 bg-gradient-to-b from-wolf-fire to-transparent"></div>
+        </div>
+    </section>
+
+    <section id="philosophy" class="py-24 bg-wolf-dark relative border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal-up">
+                    <h2 class="text-wolf-fire font-bold tracking-widest text-sm uppercase mb-3">المنهجية الاستراتيجية</h2>
+                    <h3 class="text-4xl md:text-5xl font-black text-white mb-6">دقة، رؤية ثاقبة، ونتائج <br><span class="text-gray-500">تتحدث عن نفسها.</span></h3>
+                    <p class="text-gray-400 leading-relaxed text-lg mb-8">
+                        نحن لا نؤمن بالتسويق العشوائي. استراتيجياتنا مبنية على تحليل عميق للبيانات، فهم دقيق لسلوك المستهلك، واستخدام أدوات ذكاء اصطناعي متقدمة. هدفنا ليس فقط زيادة المتابعين، بل مضاعفة المبيعات وترسيخ اسم علامتك التجارية كمرجع أول في مجالك.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="border-r-2 border-wolf-fire pr-4">
+                            <h4 class="text-3xl font-black text-white font-en mb-1">99%</h4>
+                            <p class="text-sm text-gray-500">نسبة رضا العملاء والتجديد</p>
+                        </div>
+                        <div class="border-r-2 border-wolf-ember pr-4">
+                            <h4 class="text-3xl font-black text-white font-en mb-1">+500</h4>
+                            <p class="text-sm text-gray-500">حملة تسويقية ناجحة</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 reveal-up delay-200">
+                    <div class="space-y-4 pt-8">
+                        <div class="bg-wolf-gray p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors">
+                            <i class="fas fa-bullseye text-3xl text-wolf-fire mb-4"></i>
+                            <h4 class="text-xl font-bold text-white mb-2">استهداف دقيق</h4>
+                            <p class="text-sm text-gray-400">نصل لعميلك المحتمل أينما كان.</p>
+                        </div>
+                        <div class="bg-wolf-gray p-6 rounded-2xl border border-gray-800 hover:border-wolf-ember transition-colors">
+                            <i class="fas fa-chart-pie text-3xl text-wolf-ember mb-4"></i>
+                            <h4 class="text-xl font-bold text-white mb-2">تحليل البيانات</h4>
+                            <p class="text-sm text-gray-400">قراراتنا مبنية على أرقام حقيقية.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-wolf-gray p-6 rounded-2xl border border-gray-800 hover:border-wolf-ember transition-colors">
+                            <i class="fas fa-rocket text-3xl text-wolf-ember mb-4"></i>
+                            <h4 class="text-xl font-bold text-white mb-2">نمو متسارع</h4>
+                            <p class="text-sm text-gray-400">استراتيجيات مصممة لمضاعفة الأرباح.</p>
+                        </div>
+                        <div class="bg-wolf-gray p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors">
+                            <i class="fas fa-crown text-3xl text-wolf-fire mb-4"></i>
+                            <h4 class="text-xl font-bold text-white mb-2">هيمنة السوق</h4>
+                            <p class="text-sm text-gray-400">نجعلك الخيار الأول دائماً.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-32 bg-[#030303] relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-wolf-fire rounded-full blur-[200px] opacity-[0.03] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Animated Header -->
+            <div class="text-center mb-20 reveal-up flex flex-col items-center">
+                <div class="relative inline-block px-10 py-4">
+                    <!-- Tech Brackets Animation -->
+                    <div class="absolute top-0 right-0 hidden md:block">
+                        <div class="w-12 h-[2px] bg-gradient-to-r from-transparent to-wolf-fire animate-[pulse_2s_ease-in-out_infinite]"></div>
+                        <div class="w-[2px] h-12 bg-gradient-to-b from-wolf-fire to-transparent absolute top-0 right-0 animate-[pulse_2s_ease-in-out_infinite]"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 hidden md:block">
+                        <div class="w-12 h-[2px] bg-gradient-to-l from-transparent to-wolf-ember animate-[pulse_3s_ease-in-out_infinite]"></div>
+                        <div class="w-[2px] h-12 bg-gradient-to-t from-wolf-ember to-transparent absolute bottom-0 left-0 animate-[pulse_3s_ease-in-out_infinite]"></div>
+                    </div>
+
+                    <h2 class="text-wolf-fire font-bold tracking-widest text-sm uppercase mb-4 flex items-center justify-center gap-4">
+                        <span class="w-10 h-[1px] bg-wolf-fire/50"></span>
+                        أسلحتنا الرقمية
+                        <span class="w-10 h-[1px] bg-wolf-fire/50"></span>
+                    </h2>
+                    
+                    <!-- Ping Dots and Text Shine -->
+                    <h3 class="text-4xl md:text-6xl font-black text-white relative inline-flex items-center gap-3">
+                        <span class="absolute -right-6 top-3 w-2.5 h-2.5 bg-wolf-fire rounded-full animate-ping hidden md:block"></span>
+                        حلول تسويقية 
+                        <span class="text-shine">متكاملة</span>
+                        <span class="absolute -left-6 bottom-3 w-2.5 h-2.5 bg-wolf-ember rounded-full animate-ping hidden md:block" style="animation-delay: 1s;"></span>
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Spotlight Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="cards-container">
+                
+                <div class="spotlight-card p-8 reveal-up cursor-pointer group" onclick="openModal('seo-services-modal')">
+                    <div class="spotlight-overlay"></div>
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="icon-wrapper w-16 h-16 bg-black border border-gray-800 rounded-xl flex items-center justify-center mb-8 transition-transform">
+                            <i class="fas fa-search text-2xl text-white transition-all"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 text-white">تصدر محركات البحث (SEO)</h4>
+                        <p class="text-gray-400 leading-relaxed text-sm mb-8 flex-grow">نرفع ترتيب موقعك في نتائج البحث باستخدام أحدث تقنيات تحسين محركات البحث المحلية والعالمية.</p>
+                        <div class="flex items-center text-wolf-fire font-bold text-sm group-hover:text-wolf-ember transition-colors mt-auto">
+                            <span>استكشف محركات بحث الـ SEO</span>
+                            <i class="fas fa-arrow-left mr-2 transform group-hover:-translate-x-2 transition-transform"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 reveal-up delay-100 cursor-pointer group" onclick="openModal('ads-services-modal')">
+                    <div class="spotlight-overlay"></div>
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="icon-wrapper w-16 h-16 bg-black border border-gray-800 rounded-xl flex items-center justify-center mb-8 transition-transform">
+                            <i class="fas fa-bullhorn text-2xl text-white transition-all"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 text-white">الحملات الإعلانية الممولة</h4>
+                        <p class="text-gray-400 leading-relaxed text-sm mb-8 flex-grow">إدارة ميزانيات ضخمة عبر (Meta, Snapchat, TikTok, LinkedIn) باستهداف دقيق جداً يضمن أعلى عائد على الاستثمار (ROAS).</p>
+                        <div class="flex items-center text-wolf-fire font-bold text-sm group-hover:text-wolf-ember transition-colors mt-auto">
+                            <span>استكشف المنصات</span>
+                            <i class="fas fa-arrow-left mr-2 transform group-hover:-translate-x-2 transition-transform"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 reveal-up delay-200 cursor-pointer group" onclick="openModal('google-services-modal')">
+                    <div class="spotlight-overlay"></div>
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="icon-wrapper w-16 h-16 bg-black border border-gray-800 rounded-xl flex items-center justify-center mb-8 transition-transform">
+                            <i class="fab fa-google text-2xl text-white transition-all"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 text-white">إدارة ملفات جوجل (GMB)</h4>
+                        <p class="text-gray-400 leading-relaxed text-sm mb-8 flex-grow">توثيق وتحسين ملف نشاطك التجاري على خرائط جوجل ليتصدر نتائج البحث المحلية (Local SEO) ويجذب آلاف الزوار لفرعك.</p>
+                        <div class="flex items-center text-wolf-fire font-bold text-sm group-hover:text-wolf-ember transition-colors mt-auto">
+                            <span>استكشف التفاصيل</span>
+                            <i class="fas fa-arrow-left mr-2 transform group-hover:-translate-x-2 transition-transform"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 reveal-up cursor-pointer group" onclick="openModal('social-services-modal')">
+                    <div class="spotlight-overlay"></div>
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="icon-wrapper w-16 h-16 bg-black border border-gray-800 rounded-xl flex items-center justify-center mb-8 transition-transform">
+                            <i class="fas fa-hashtag text-2xl text-white transition-all"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 text-white">إدارة السوشيال ميديا</h4>
+                        <p class="text-gray-400 leading-relaxed text-sm mb-8 flex-grow">صناعة محتوى تفاعلي، تصميم هوية بصرية قوية، وبناء مجتمع وفي لعلامتك التجارية عبر مختلف منصات التواصل الاجتماعي.</p>
+                        <div class="flex items-center text-wolf-fire font-bold text-sm group-hover:text-wolf-ember transition-colors mt-auto">
+                            <span>استكشف الباقات</span>
+                            <i class="fas fa-arrow-left mr-2 transform group-hover:-translate-x-2 transition-transform"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 reveal-up delay-100 cursor-pointer group" onclick="openModal('web-services-modal')">
+                    <div class="spotlight-overlay"></div>
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="icon-wrapper w-16 h-16 bg-black border border-gray-800 rounded-xl flex items-center justify-center mb-8 transition-transform">
+                            <i class="fas fa-laptop-code text-2xl text-white transition-all"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 text-white">برمجة المواقع المتقدمة</h4>
+                        <p class="text-gray-400 leading-relaxed text-sm mb-8 flex-grow">تصميم وبرمجة مواقع احترافية وفائقة السرعة، مبنية بأحدث التقنيات وتراعي تجربة المستخدم (UI/UX) ومحسنة كلياً لمحركات البحث.</p>
+                        <div class="flex items-center text-wolf-fire font-bold text-sm group-hover:text-wolf-ember transition-colors mt-auto">
+                            <span>استكشف الحلول</span>
+                            <i class="fas fa-arrow-left mr-2 transform group-hover:-translate-x-2 transition-transform"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 reveal-up delay-200 cursor-pointer group" onclick="openModal('strategy-services-modal')">
+                    <div class="spotlight-overlay"></div>
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="icon-wrapper w-16 h-16 bg-black border border-gray-800 rounded-xl flex items-center justify-center mb-8 transition-transform">
+                            <i class="fas fa-chess-knight text-2xl text-white transition-all"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 text-white">الاستشارات الاستراتيجية</h4>
+                        <p class="text-gray-400 leading-relaxed text-sm mb-8 flex-grow">نضع بين يديك عصارة خبرتنا لتحليل منافسيك، كشف نقاط الضعف في السوق، ورسم خارطة طريق واضحة لاكتساح مجالك.</p>
+                        <div class="flex items-center text-wolf-fire font-bold text-sm group-hover:text-wolf-ember transition-colors mt-auto">
+                            <span>استكشف الاستشارات</span>
+                            <i class="fas fa-arrow-left mr-2 transform group-hover:-translate-x-2 transition-transform"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 bg-wolf-black relative border-t border-gray-900 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 reveal-up">
+                <h2 class="text-wolf-fire font-bold tracking-widest text-sm uppercase mb-3">معرض الأعمال</h2>
+                <h3 class="text-4xl md:text-5xl font-black text-white">لمحة من <span class="text-gray-500">إبداعاتنا</span></h3>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto text-lg">تصاميم وحملات إعلانية مدروسة بعناية، مبنية على فهم عميق لنفسية المستهلك لتحقيق أعلى تفاعل ومبيعات حقيقية.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="relative rounded-3xl overflow-hidden group border border-gray-800 reveal-up hover:border-wolf-fire/50 transition-colors duration-300 hover:shadow-[0_0_30px_rgba(255,81,0,0.15)] cursor-pointer">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                    <img src="508501283_744247094628583_7937630843619384638_n.jpg" alt="إعلان بيجيب نتيجة" class="w-full h-auto transform group-hover:scale-110 transition-transform duration-700">
+                </div>
+                
+                <div class="relative rounded-3xl overflow-hidden group border border-gray-800 reveal-up delay-100 hover:border-wolf-fire/50 transition-colors duration-300 hover:shadow-[0_0_30px_rgba(255,81,0,0.15)] cursor-pointer">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                    <img src="509255107_744247087961917_1663913623238681993_n.jpg" alt="جمهورك الصح" class="w-full h-auto transform group-hover:scale-110 transition-transform duration-700">
+                </div>
+                
+                <div class="relative rounded-3xl overflow-hidden group border border-gray-800 reveal-up delay-200 hover:border-wolf-fire/50 transition-colors duration-300 hover:shadow-[0_0_30px_rgba(255,81,0,0.15)] cursor-pointer">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                    <img src="507130227_744247067961919_6849506776602573164_n.jpg" alt="شركاء بنجاحك" class="w-full h-auto transform group-hover:scale-110 transition-transform duration-700">
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center reveal-up delay-300">
+                 <a href="https://www.instagram.com/wolf_lsk" target="_blank" class="inline-flex items-center gap-2 text-wolf-fire hover:text-wolf-ember font-bold transition-colors">
+                     شاهد المزيد من أعمالنا على إنستغرام <i class="fas fa-arrow-left"></i>
+                 </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="payment" class="py-24 bg-wolf-dark relative border-t border-gray-900 overflow-hidden">
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-wolf-fire/5 rounded-full blur-[150px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 reveal-up">
+                <h2 class="text-wolf-fire font-bold tracking-widest text-sm uppercase mb-3">بوابة الدفع والبدء الفوري</h2>
+                <h3 class="text-4xl md:text-5xl font-black text-white">خطوة واحدة تفصلك عن <span class="text-gray-500">الصدارة</span></h3>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto text-lg">اختر خدمتك، ادفع بكل أمان وسهولة، وارفع الوصل لنبدأ العمل على مشروعك فوراً.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Payment Information Cards -->
+                <div class="lg:col-span-5 reveal-up delay-100 flex flex-col h-full">
+                    
+                    <!-- 1. CliQ Information Card -->
+                    <div class="bg-black/40 border border-gray-800 rounded-3xl p-6 relative overflow-hidden group hover:border-wolf-fire/50 transition-colors">
+                        <div class="absolute top-0 right-0 bg-wolf-fire/10 text-wolf-fire text-[10px] font-bold px-4 py-1.5 rounded-bl-xl z-20 uppercase tracking-widest border-b border-l border-wolf-fire/20">العملاء داخل الأردن</div>
+                        <div class="absolute -top-20 -right-20 w-40 h-40 bg-wolf-fire/20 blur-3xl rounded-full pointer-events-none transition-all group-hover:bg-wolf-fire/30"></div>
+                        
+                        <div class="flex justify-between items-start mb-6 relative z-10 mt-2">
+                            <div>
+                                <p class="text-gray-500 text-xs font-bold tracking-widest uppercase mb-1">تحويل فوري</p>
+                                <h4 class="text-2xl font-black text-white font-en">CliQ <i class="fas fa-bolt text-wolf-fire ml-1 text-lg"></i></h4>
+                            </div>
+                            <div class="w-10 h-10 bg-blue-900/20 text-blue-500 flex items-center justify-center rounded-xl border border-blue-900/50 shadow-[0_0_15px_rgba(59,130,246,0.2)]">
+                                <i class="fas fa-university text-sm"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4 relative z-10">
+                            <p class="text-gray-400 text-[11px] mb-1">الاسم المستعار (Alias):</p>
+                            <div class="flex items-center justify-between bg-black/60 border border-gray-700 rounded-xl p-3">
+                                <span class="text-xl font-en font-black text-white tracking-widest" id="cliq-alias">LSK4758</span>
+                                <button type="button" onclick="copyCliqAlias()" class="text-wolf-fire hover:text-white transition-colors flex items-center gap-2 text-xs font-bold bg-wolf-fire/10 px-3 py-1.5 rounded-lg">
+                                    <span id="copy-btn-text"><i class="fas fa-copy"></i> نسخ</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="relative z-10 bg-black/30 border border-gray-800 rounded-xl p-3">
+                            <p class="text-gray-500 text-[10px] mb-1">مزود الخدمة:</p>
+                            <p class="text-sm font-bold text-white flex items-center gap-2">
+                                البنك العربي (Arab Bank)
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2. IBAN Information Card -->
+                    <div class="bg-black/40 border border-gray-800 rounded-3xl p-6 relative overflow-hidden group hover:border-gray-600 transition-colors mt-6">
+                        <div class="absolute top-0 right-0 bg-gray-800/50 text-gray-300 text-[10px] font-bold px-4 py-1.5 rounded-bl-xl z-20 uppercase tracking-widest border-b border-l border-gray-700">دول الخليج والعالم</div>
+                        <div class="absolute -bottom-20 -left-20 w-40 h-40 bg-blue-500/10 blur-3xl rounded-full pointer-events-none transition-all group-hover:bg-blue-500/20"></div>
+                        
+                        <div class="flex justify-between items-start mb-6 relative z-10 mt-2">
+                            <div>
+                                <p class="text-gray-500 text-xs font-bold tracking-widest uppercase mb-1">التحويل البنكي الدولي</p>
+                                <h4 class="text-2xl font-black text-white font-en">IBAN / SWIFT <i class="fas fa-globe text-blue-500 ml-1 text-lg"></i></h4>
+                            </div>
+                            <div class="w-10 h-10 bg-gray-900/50 text-gray-400 flex items-center justify-center rounded-xl border border-gray-800">
+                                <i class="fas fa-building-columns text-sm"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4 relative z-10 bg-black/50 border border-gray-800 rounded-xl p-3">
+                            <p class="text-gray-500 text-[10px] mb-1">اسم المستفيد (Beneficiary Name):</p>
+                            <p class="text-sm font-bold text-white uppercase font-en">Wesam Mohammad Mousa Batayneh</p>
+                        </div>
+                        
+                        <div class="mb-4 relative z-10">
+                            <p class="text-gray-400 text-[11px] mb-1">رقم الآيبان (IBAN):</p>
+                            <div class="flex items-center justify-between bg-black/60 border border-gray-700 rounded-xl p-3">
+                                <span class="text-[11px] sm:text-xs font-en font-black text-white tracking-wider break-all" id="iban-number">JO49ARAB9000030022413300701500</span>
+                                <button type="button" onclick="copyCustomData('iban-number', 'copy-iban-btn')" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-xs font-bold bg-gray-800 px-3 py-1.5 rounded-lg ml-2 shrink-0">
+                                    <span id="copy-iban-btn"><i class="fas fa-copy"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-3 relative z-10">
+                            <div class="bg-black/30 border border-gray-800 rounded-xl p-3 flex justify-between items-center">
+                                <div>
+                                    <p class="text-gray-500 text-[10px] mb-1">رمز SWIFT:</p>
+                                    <p class="text-sm font-bold text-white font-en" id="swift-code">ARABJOAX</p>
+                                </div>
+                                <button type="button" onclick="copyCustomData('swift-code', 'copy-swift-btn')" class="text-gray-400 hover:text-white transition-colors p-2" title="نسخ">
+                                    <span id="copy-swift-btn"><i class="fas fa-copy"></i></span>
+                                </button>
+                            </div>
+                            <div class="bg-black/30 border border-gray-800 rounded-xl p-3">
+                                <p class="text-gray-500 text-[10px] mb-1">البنك:</p>
+                                <p class="text-xs font-bold text-white">البنك العربي (Reflect)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-center gap-4 text-gray-400">
+                            <div class="w-8 h-8 rounded-full bg-gray-900 text-wolf-fire flex items-center justify-center font-bold font-en text-sm border border-gray-800 shrink-0">1</div>
+                            <p class="text-sm">قم بتحويل مبلغ الخدمة عبر (كليك) أو (حوالة دولية).</p>
+                        </div>
+                        <div class="flex items-center gap-4 text-gray-400">
+                            <div class="w-8 h-8 rounded-full bg-gray-900 text-wolf-fire flex items-center justify-center font-bold font-en text-sm border border-gray-800 shrink-0">2</div>
+                            <p class="text-sm">خذ لقطة شاشة (Screenshot) لوصل التحويل الناجح.</p>
+                        </div>
+                        <div class="flex items-center gap-4 text-gray-400">
+                            <div class="w-8 h-8 rounded-full bg-gray-900 text-wolf-fire flex items-center justify-center font-bold font-en text-sm border border-gray-800 shrink-0">3</div>
+                            <p class="text-sm">املأ النموذج الجانبي وأرفق الصورة، وسنتواصل معك فوراً!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Section -->
+                <div class="lg:col-span-7 reveal-up delay-200" id="form-container">
+                    <form id="payment-form" class="bg-wolf-gray/40 p-8 rounded-3xl border border-gray-800 shadow-2xl relative backdrop-blur-sm space-y-6">
+                        
+                        <div>
+                            <label class="block text-sm font-bold text-gray-300 mb-2">اسم العميل / اسم النشاط التجاري</label>
+                            <input type="text" required class="w-full bg-black/50 border border-gray-700 text-white rounded-xl px-5 py-4 focus:outline-none focus:border-wolf-fire transition-colors placeholder-gray-600" placeholder="اكتب اسمك أو اسم شركتك هنا...">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-bold text-gray-300 mb-2">الخدمة التي تم الدفع لها</label>
+                            <div class="relative">
+                                <select required class="w-full bg-black/50 border border-gray-700 text-white rounded-xl px-5 py-4 appearance-none focus:outline-none focus:border-wolf-fire transition-colors cursor-pointer outline-none">
+                                    <option value="" disabled selected>-- اختر الخدمة من هنا --</option>
+                                    <option value="seo">تصدر محركات البحث (SEO)</option>
+                                    <option value="ads">الحملات الإعلانية الممولة</option>
+                                    <option value="gmb">إدارة ملفات جوجل (GMB)</option>
+                                    <option value="social">إدارة السوشيال ميديا</option>
+                                    <option value="web">برمجة المواقع المتقدمة</option>
+                                    <option value="strategy">الاستشارات الاستراتيجية</option>
+                                </select>
+                                <i class="fas fa-chevron-down absolute left-5 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-gray-300 mb-2">إرفاق صورة وصل الدفع (Screenshot)</label>
+                            <label class="flex flex-col items-center justify-center w-full h-36 bg-black/50 border-2 border-dashed border-gray-700 rounded-xl cursor-pointer hover:border-wolf-fire hover:bg-wolf-fire/5 transition-all group">
+                                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                    <i class="fas fa-cloud-upload-alt text-4xl text-gray-600 group-hover:text-wolf-fire mb-3 transition-colors"></i>
+                                    <p class="text-sm text-gray-400 text-center px-4" id="file-name-display"><span class="font-bold text-white">اضغط هنا لاختيار الصورة</span><br>أو اسحبها وأفلتها</p>
+                                </div>
+                                <input type="file" class="hidden" accept="image/*" required onchange="document.getElementById('file-name-display').innerHTML = '<span class=\'text-wolf-fire font-bold\'><i class=\'fas fa-check-circle mr-1\'></i> تم إرفاق الملف: </span><br><span class=\'text-white\'>' + this.files[0].name + '</span>'">
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-gradient-to-r from-wolf-fire to-wolf-ember text-white font-black text-lg py-4 rounded-xl hover:shadow-[0_0_30px_rgba(255,81,0,0.4)] transition-all transform hover:-translate-y-1 mt-4 flex items-center justify-center gap-2">
+                            تأكيد الدفع وإرسال الطلب <i class="fas fa-paper-plane text-sm"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-wolf-dark pt-20 pb-10 border-t border-gray-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16 reveal-up">
+                
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-4 mb-8 group cursor-pointer w-fit">
+                        <img src="تصميم بدون عنوان (11).jpg" alt="Wolf LSK" class="h-12 w-12 rounded-full border border-gray-700 grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <span class="font-en text-2xl font-black tracking-widest text-white">
+                            WOLF<span class="text-wolf-fire">LSK</span>
+                        </span>
+                    </div>
+                    <p class="text-gray-500 leading-relaxed mb-8 text-sm max-w-sm">
+                        وكالة رقمية متكاملة. نصنع الفارق في أعمالك من خلال التخطيط الاستراتيجي، الابتكار التقني، والتنفيذ الخالي من العيوب.
+                    </p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="https://web.facebook.com/wolf.lsk.sms/" target="_blank" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/wolf_lsk" target="_blank" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/962782456543" target="_blank" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black transition-all">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-3">
+                    <h4 class="text-white font-bold mb-6">خريطة الموقع</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#home" class="text-gray-500 hover:text-white transition-colors text-sm">الرئيسية</a></li>
+                        <li><a href="#philosophy" class="text-gray-500 hover:text-white transition-colors text-sm">منهجيتنا</a></li>
+                        <li><a href="#services" class="text-gray-500 hover:text-white transition-colors text-sm">الخدمات</a></li>
+                        <li><a href="https://wolflsk.online/" target="_blank" class="text-gray-500 hover:text-wolf-fire transition-colors text-sm">الموقع القديم</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4">
+                    <h4 class="text-white font-bold mb-6">تواصل مع الخبراء</h4>
+                    <ul class="space-y-6">
+                        <li>
+                            <a href="https://maps.app.goo.gl/UYPebc4zyESJJybd8" target="_blank" class="flex items-start group">
+                                <i class="fas fa-map-marker-alt text-gray-600 group-hover:text-wolf-fire transition-colors mt-1 ml-4 text-xl"></i>
+                                <div>
+                                    <p class="text-white text-sm mb-1">مقر الوكالة</p>
+                                    <p class="text-gray-500 text-sm">عمان، الأردن (اضغط للاتجاهات)</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/962782456543" target="_blank" class="flex items-start group">
+                                <i class="fab fa-whatsapp text-gray-600 group-hover:text-wolf-fire transition-colors mt-1 ml-4 text-xl"></i>
+                                <div>
+                                    <p class="text-white text-sm mb-1">الخط المباشر</p>
+                                    <p class="text-gray-500 text-sm font-en tracking-wider" dir="ltr">+962 7 8245 6543</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 reveal-up">
+                <p class="text-gray-600 text-xs">
+                    &copy; 2026 <span class="text-white font-en">Wolf LSK Agency</span>. جميع الحقوق محفوظة.
+                </p>
+                <div class="text-gray-600 text-xs flex items-center gap-2">
+                    صُنع بشغف واحترافية <i class="fas fa-bolt text-wolf-fire"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Google Services Modal -->
+    <div id="google-services-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center px-4 sm:px-6">
+        <div class="modal-backdrop absolute inset-0 bg-black/80 backdrop-blur-md cursor-pointer" onclick="closeModal('google-services-modal')"></div>
+        <div class="modal-content relative w-full max-w-4xl bg-wolf-dark border border-gray-700 rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(255,81,0,0.15)] z-10 max-h-[90vh] flex flex-col">
+            
+            <div class="relative px-8 py-6 border-b border-gray-800 bg-black/50 flex justify-between items-center">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-gradient-to-r from-transparent via-wolf-fire to-transparent opacity-50"></div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-gray-700">
+                        <i class="fab fa-google text-2xl text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-white">إدارة ملفات جوجل</h3>
+                        <p class="text-xs text-wolf-ember font-en tracking-wider uppercase mt-1">Google Ecosystem</p>
+                    </div>
+                </div>
+                <button onclick="closeModal('google-services-modal')" class="w-10 h-10 rounded-full bg-gray-900 hover:bg-wolf-fire text-gray-400 hover:text-white transition-all flex items-center justify-center border border-gray-700 focus:outline-none"><i class="fas fa-times text-lg"></i></button>
+            </div>
+
+            <div class="bg-wolf-fire/10 border-b border-wolf-fire/20 px-8 py-3 flex items-center gap-3">
+                <i class="fas fa-shield-check text-wolf-fire"></i>
+                <p class="text-sm text-gray-300 font-medium">كل خدمة تُنفذ بواسطة فريق متخصص مع متابعة دورية وتقارير احترافية لضمان أفضل النتائج.</p>
+            </div>
+
+            <div class="p-8 overflow-y-auto custom-scrollbar flex-1 relative">
+                <i class="fab fa-google absolute top-10 right-10 text-[200px] text-white/[0.02] pointer-events-none"></i>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-map-marked-alt text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة إنشاء خريطة على جوجل ماب" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">إنشاء خريطة على جوجل ماب</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">توثيق وتحسين ملف نشاطك التجاري على خرائط جوجل ليتصدر نتائج البحث المحلية ويجذب عملاء لفرعك.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-ad text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة إعلانات جوجل (Google Ads)" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2 font-en">Google Ads</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">حملات شبكة البحث، العرض، واليوتيوب باستهداف دقيق يضمن ظهورك في النتيجة الأولى ودفع مقابل النقرة فقط.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-shopping-bag text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة Google Merchant Center" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2 font-en">Google Merchant Center</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">إدراج منتجاتك مباشرة في تبويب التسوق (Google Shopping) لزيادة المبيعات وعرض الأسعار والصور للمتسوقين.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-store text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة إدارة الملف التجاري على Google" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">إدارة الملف التجاري على Google</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">تحديث الملف التجاري، الرد على التقييمات، ونشر العروض لزيادة التفاعل وبناء ثقة العملاء باستمرار.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-tags text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة Google Tag Manager" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2 font-en">Google Tag Manager</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">إدارة جميع أكواد التتبع (البكسل) في موقعك من مكان واحد دون الحاجة لمبرمج لضمان سرعة الموقع.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-laptop-code text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة Google Search Console" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2 font-en">Google Search Console</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">مراقبة صحة موقعك في نتائج البحث، أرشفة الصفحات، وحل أي مشاكل تقنية تعيق ظهورك المجاني.</p>
+                    </div>
+                </div>
+
+                <div class="mt-10 text-center">
+                    <a href="https://wa.me/962782456543" target="_blank" class="inline-flex items-center justify-center px-8 py-3 font-bold text-white bg-gradient-to-r from-wolf-fire to-wolf-ember rounded-full shadow-[0_0_20px_rgba(255,81,0,0.4)] hover:shadow-[0_0_30px_rgba(255,81,0,0.6)] hover:scale-105 transition-all">
+                        احجز خدمة جوجل الآن <i class="fab fa-whatsapp mr-2 text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ads Services Modal -->
+    <div id="ads-services-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center px-4 sm:px-6">
+        <div class="modal-backdrop absolute inset-0 bg-black/80 backdrop-blur-md cursor-pointer" onclick="closeModal('ads-services-modal')"></div>
+        <div class="modal-content relative w-full max-w-4xl bg-wolf-dark border border-gray-700 rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(255,81,0,0.15)] z-10 max-h-[90vh] flex flex-col">
+            <div class="relative px-8 py-6 border-b border-gray-800 bg-black/50 flex justify-between items-center">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-gradient-to-r from-transparent via-wolf-fire to-transparent opacity-50"></div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-bullhorn text-2xl text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-white">إدارة الحملات الإعلانية</h3>
+                        <p class="text-xs text-wolf-ember font-en tracking-wider uppercase mt-1">Paid Media Dominance</p>
+                    </div>
+                </div>
+                <button onclick="closeModal('ads-services-modal')" class="w-10 h-10 rounded-full bg-gray-900 hover:bg-wolf-fire text-gray-400 hover:text-white transition-all flex items-center justify-center border border-gray-700 focus:outline-none"><i class="fas fa-times text-lg"></i></button>
+            </div>
+            
+            <div class="bg-wolf-fire/10 border-b border-wolf-fire/20 px-8 py-3 flex items-center gap-3">
+                <i class="fas fa-shield-check text-wolf-fire"></i>
+                <p class="text-sm text-gray-300 font-medium">كل خدمة تُنفذ بواسطة فريق متخصص مع متابعة دورية وتقارير احترافية لضمان أفضل النتائج.</p>
+            </div>
+
+            <div class="p-8 overflow-y-auto custom-scrollbar flex-1 relative">
+                <i class="fas fa-ad absolute top-10 right-10 text-[200px] text-white/[0.02] pointer-events-none"></i>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex gap-2">
+                                <i class="fab fa-facebook text-3xl text-[#1877F2]"></i>
+                                <i class="fab fa-instagram text-3xl text-[#E4405F]"></i>
+                            </div>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بإعلانات ميتا (Meta)" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">إعلانات ميتا (Meta)</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">استهداف دقيق عبر فيسبوك وانستغرام لزيادة المبيعات المباشرة وإعادة الاستهداف (Retargeting).</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fab fa-snapchat-ghost text-3xl text-[#FFFC00]"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بإعلانات سناب شات" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">إعلانات سناب شات</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">الوصول الأقوى للجمهور الخليجي والمحلي بفعالية عالية من خلال إعلانات فيديو تخطف الأنظار.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fab fa-tiktok text-3xl text-white"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بإعلانات تيك توك" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">إعلانات تيك توك</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">استغلال التريندات والوصول السريع لملايين المستخدمين بتكلفة نقرة ممتازة لزيادة التفاعل.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fab fa-linkedin-in text-3xl text-[#0A66C2]"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بإعلانات لينكد إن" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">إعلانات لينكد إن (B2B)</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">استهداف الشركات والمدراء وصناع القرار لتعزيز الشراكات وبيع الخدمات الموجهة للأعمال بمهنية.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fab fa-twitter text-3xl text-[#1DA1F2]"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بإعلانات منصة X (تويتر)" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2 font-en">X (Twitter) Ads</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">الاستفادة من الأحداث الرائجة والوصول لجمهور نخبوي ومتفاعل من خلال الحملات الإعلانية على منصة X.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-mobile-alt text-3xl text-[#00f2fe]"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بحملات ترويج التطبيقات" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">ترويج التطبيقات (App Ads)</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">حملات مخصصة لزيادة تحميلات تطبيقك (App Installs) عبر جميع الشبكات بأقل تكلفة للتحميل الواحد.</p>
+                    </div>
+                </div>
+                <div class="mt-10 text-center">
+                    <a href="https://wa.me/962782456543" target="_blank" class="inline-flex items-center justify-center px-8 py-3 font-bold text-white bg-gradient-to-r from-wolf-fire to-wolf-ember rounded-full shadow-[0_0_20px_rgba(255,81,0,0.4)] hover:shadow-[0_0_30px_rgba(255,81,0,0.6)] hover:scale-105 transition-all">
+                        أطلق حملتك الآن <i class="fab fa-whatsapp mr-2 text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEO Services Modal -->
+    <div id="seo-services-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center px-4 sm:px-6">
+        <div class="modal-backdrop absolute inset-0 bg-black/80 backdrop-blur-md cursor-pointer" onclick="closeModal('seo-services-modal')"></div>
+        <div class="modal-content relative w-full max-w-4xl bg-wolf-dark border border-gray-700 rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(255,81,0,0.15)] z-10 max-h-[90vh] flex flex-col">
+            <div class="relative px-8 py-6 border-b border-gray-800 bg-black/50 flex justify-between items-center">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-gradient-to-r from-transparent via-wolf-fire to-transparent opacity-50"></div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-search text-2xl text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-white">تصدر محركات البحث (SEO)</h3>
+                        <p class="text-xs text-wolf-ember font-en tracking-wider uppercase mt-1">Search Engine Dominance</p>
+                    </div>
+                </div>
+                <button onclick="closeModal('seo-services-modal')" class="w-10 h-10 rounded-full bg-gray-900 hover:bg-wolf-fire text-gray-400 hover:text-white transition-all flex items-center justify-center border border-gray-700 focus:outline-none"><i class="fas fa-times text-lg"></i></button>
+            </div>
+            
+            <div class="bg-wolf-fire/10 border-b border-wolf-fire/20 px-8 py-3 flex items-center gap-3">
+                <i class="fas fa-shield-check text-wolf-fire"></i>
+                <p class="text-sm text-gray-300 font-medium">كل خدمة تُنفذ بواسطة فريق متخصص مع متابعة دورية وتقارير احترافية لضمان أفضل النتائج.</p>
+            </div>
+
+            <div class="p-8 overflow-y-auto custom-scrollbar flex-1 relative">
+                <i class="fas fa-search absolute top-10 right-10 text-[200px] text-white/[0.02] pointer-events-none"></i>
+                <p class="text-gray-400 text-lg leading-relaxed mb-10 max-w-2xl">نرفع ترتيب موقعك في نتائج البحث باستخدام أحدث تقنيات تحسين محركات البحث المحلية والعالمية.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-file-alt text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة SEO الداخلي" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">SEO الداخلي</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">تحسين بنية الصفحات، العناوين، الأوصاف، والروابط الداخلية لتتوافق تماماً مع خوارزميات محركات البحث.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-link text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة SEO الخارجي" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">SEO الخارجي</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">بناء شبكة روابط خلفية (Backlinks) قوية من مواقع موثوقة لرفع الدومين أثورتي (DA) وزيادة مصداقية موقعك.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-map-marker-alt text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة Local SEO" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2 font-en">Local SEO</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">تصدر نتائج البحث المحلية عبر ربط الموقع بخرائط جوجل وتهيئته لاستهداف مدينتك.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-cogs text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة Technical SEO" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2 font-en">Technical SEO</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">إصلاح أخطاء الزحف، بناء ملفات Sitemap وضمان قراءة عناكب جوجل لموقعك بدون عوائق.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-key text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة Keyword Research" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2 font-en">Keyword Research</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">تحليل الكلمات المفتاحية ذات البحث العالي والمنافسة لجلب زيارات مستهدفة تبحث عن خدماتك.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-pen-nib text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة Content Optimization" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2 font-en">Content Optimization</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">تحسين محتوى الموقع ليكون غنياً ومفيداً ومتوافقاً مع نية البحث (Search Intent).</p>
+                    </div>
+                </div>
+                <div class="mt-10 text-center">
+                    <a href="https://wa.me/962782456543" target="_blank" class="inline-flex items-center justify-center px-8 py-3 font-bold text-white bg-gradient-to-r from-wolf-fire to-wolf-ember rounded-full shadow-[0_0_20px_rgba(255,81,0,0.4)] hover:shadow-[0_0_30px_rgba(255,81,0,0.6)] hover:scale-105 transition-all">
+                        حسّن ظهور موقعك <i class="fab fa-whatsapp mr-2 text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Media Modal -->
+    <div id="social-services-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center px-4 sm:px-6">
+        <div class="modal-backdrop absolute inset-0 bg-black/80 backdrop-blur-md cursor-pointer" onclick="closeModal('social-services-modal')"></div>
+        <div class="modal-content relative w-full max-w-4xl bg-wolf-dark border border-gray-700 rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(255,81,0,0.15)] z-10 max-h-[90vh] flex flex-col">
+            <div class="relative px-8 py-6 border-b border-gray-800 bg-black/50 flex justify-between items-center">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-gradient-to-r from-transparent via-wolf-fire to-transparent opacity-50"></div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-hashtag text-2xl text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-white">إدارة السوشيال ميديا</h3>
+                        <p class="text-xs text-wolf-ember font-en tracking-wider uppercase mt-1">Social Media Management</p>
+                    </div>
+                </div>
+                <button onclick="closeModal('social-services-modal')" class="w-10 h-10 rounded-full bg-gray-900 hover:bg-wolf-fire text-gray-400 hover:text-white transition-all flex items-center justify-center border border-gray-700 focus:outline-none"><i class="fas fa-times text-lg"></i></button>
+            </div>
+            
+            <div class="bg-wolf-fire/10 border-b border-wolf-fire/20 px-8 py-3 flex items-center gap-3">
+                <i class="fas fa-shield-check text-wolf-fire"></i>
+                <p class="text-sm text-gray-300 font-medium">كل خدمة تُنفذ بواسطة فريق متخصص مع متابعة دورية وتقارير احترافية لضمان أفضل النتائج.</p>
+            </div>
+
+            <div class="p-8 overflow-y-auto custom-scrollbar flex-1 relative">
+                <i class="fas fa-hashtag absolute top-10 right-10 text-[200px] text-white/[0.02] pointer-events-none"></i>
+                <p class="text-gray-400 text-lg leading-relaxed mb-10 max-w-2xl">نبني حضورًا رقميًا قويًا لعلامتك التجارية من خلال إدارة احترافية لجميع منصات التواصل الاجتماعي، وصناعة محتوى يجذب العملاء ويحقق نتائج حقيقية.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-mobile-alt text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة إدارة الحسابات" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">إدارة الحسابات</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">إدارة صفحات Facebook، Instagram، TikTok، LinkedIn، X، Snapchat باحترافية كاملة.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-palette text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة صناعة المحتوى" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">صناعة المحتوى</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">تصميم المنشورات، الريلز، الستوري، الفيديوهات، والهوية البصرية المتوافقة مع علامتك.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-chart-line text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة تحليل الأداء" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">تحليل الأداء</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">تحليل الإحصائيات والخوارزميات وقياس الأداء وتحسين النتائج بشكل مستمر.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-bullseye text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة الحملات الإعلانية" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">الحملات الإعلانية</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">إدارة حملات Meta وTikTok وLinkedIn وغيرها لتحقيق أعلى عائد على الاستثمار.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-comments text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة إدارة المجتمع" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">إدارة المجتمع</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">الرد على الرسائل والتعليقات وبناء علاقة قوية وثقة مع العملاء والمتابعين.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-file-invoice text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بالتقارير الشهرية" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">التقارير الشهرية</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">تقارير احترافية توضح النمو والوصول والتفاعل والمبيعات المحققة.</p>
+                    </div>
+                </div>
+                <div class="mt-10 text-center">
+                    <a href="https://wa.me/962782456543" target="_blank" class="inline-flex items-center justify-center px-8 py-3 font-bold text-white bg-gradient-to-r from-wolf-fire to-wolf-ember rounded-full shadow-[0_0_20px_rgba(255,81,0,0.4)] hover:shadow-[0_0_30px_rgba(255,81,0,0.6)] hover:scale-105 transition-all">
+                        ابدأ إدارة حساباتك الآن <i class="fab fa-whatsapp mr-2 text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Web Dev Modal -->
+    <div id="web-services-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center px-4 sm:px-6">
+        <div class="modal-backdrop absolute inset-0 bg-black/80 backdrop-blur-md cursor-pointer" onclick="closeModal('web-services-modal')"></div>
+        <div class="modal-content relative w-full max-w-4xl bg-wolf-dark border border-gray-700 rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(255,81,0,0.15)] z-10 max-h-[90vh] flex flex-col">
+            <div class="relative px-8 py-6 border-b border-gray-800 bg-black/50 flex justify-between items-center">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-gradient-to-r from-transparent via-wolf-fire to-transparent opacity-50"></div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-laptop-code text-2xl text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-white">برمجة المواقع المتقدمة</h3>
+                        <p class="text-xs text-wolf-ember font-en tracking-wider uppercase mt-1">Premium Web Development</p>
+                    </div>
+                </div>
+                <button onclick="closeModal('web-services-modal')" class="w-10 h-10 rounded-full bg-gray-900 hover:bg-wolf-fire text-gray-400 hover:text-white transition-all flex items-center justify-center border border-gray-700 focus:outline-none"><i class="fas fa-times text-lg"></i></button>
+            </div>
+            
+            <div class="bg-wolf-fire/10 border-b border-wolf-fire/20 px-8 py-3 flex items-center gap-3">
+                <i class="fas fa-shield-check text-wolf-fire"></i>
+                <p class="text-sm text-gray-300 font-medium">كل خدمة تُنفذ بواسطة فريق متخصص مع متابعة دورية وتقارير احترافية لضمان أفضل النتائج.</p>
+            </div>
+
+            <div class="p-8 overflow-y-auto custom-scrollbar flex-1 relative">
+                <i class="fas fa-laptop absolute top-10 right-10 text-[200px] text-white/[0.02] pointer-events-none"></i>
+                <p class="text-gray-400 text-lg leading-relaxed mb-10 max-w-2xl">نصمم ونطور مواقع إلكترونية احترافية وسريعة ومتوافقة مع جميع الأجهزة ومحركات البحث لتكون واجهة رقمية قوية لنشاطك.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-building text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة مواقع الشركات" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">مواقع الشركات</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">مواقع احترافية للشركات والمؤسسات تعكس الهوية البصرية وتبني الثقة.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-shopping-cart text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة المتاجر الإلكترونية" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">المتاجر الإلكترونية</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">متاجر متكاملة مع الدفع الإلكتروني وإدارة المنتجات والشحن.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-server text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم ببرمجة الأنظمة الخاصة" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">الأنظمة الخاصة</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">برمجة أنظمة CRM، ERP، ولوحات تحكم مخصصة حسب الطلب.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-mobile text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بتطبيقات الويب" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2 font-en">Web Apps</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">تطبيقات ويب متقدمة (Web Apps) تعمل بسرعة وأمان ومرونة.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-tachometer-alt text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة تحسين السرعة" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">تحسين السرعة وSEO</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">تحسين سرعة الموقع برمجياً وتجهيزه ليتصدر نتائج البحث.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-shield-alt text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة الحماية والصيانة" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">الحماية والصيانة</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">نسخ احتياطي، حماية ضد الثغرات، تحديثات وصيانة دورية.</p>
+                    </div>
+                </div>
+                <div class="mt-10 text-center">
+                    <a href="https://wa.me/962782456543" target="_blank" class="inline-flex items-center justify-center px-8 py-3 font-bold text-white bg-gradient-to-r from-wolf-fire to-wolf-ember rounded-full shadow-[0_0_20px_rgba(255,81,0,0.4)] hover:shadow-[0_0_30px_rgba(255,81,0,0.6)] hover:scale-105 transition-all">
+                        ابدأ مشروعك الآن <i class="fab fa-whatsapp mr-2 text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Strategy Modal -->
+    <div id="strategy-services-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center px-4 sm:px-6">
+        <div class="modal-backdrop absolute inset-0 bg-black/80 backdrop-blur-md cursor-pointer" onclick="closeModal('strategy-services-modal')"></div>
+        <div class="modal-content relative w-full max-w-4xl bg-wolf-dark border border-gray-700 rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(255,81,0,0.15)] z-10 max-h-[90vh] flex flex-col">
+            <div class="relative px-8 py-6 border-b border-gray-800 bg-black/50 flex justify-between items-center">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-gradient-to-r from-transparent via-wolf-fire to-transparent opacity-50"></div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-gray-700">
+                        <i class="fas fa-chess-knight text-2xl text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-white">الاستشارات الاستراتيجية</h3>
+                        <p class="text-xs text-wolf-ember font-en tracking-wider uppercase mt-1">Digital Strategy Consulting</p>
+                    </div>
+                </div>
+                <button onclick="closeModal('strategy-services-modal')" class="w-10 h-10 rounded-full bg-gray-900 hover:bg-wolf-fire text-gray-400 hover:text-white transition-all flex items-center justify-center border border-gray-700 focus:outline-none"><i class="fas fa-times text-lg"></i></button>
+            </div>
+            
+            <div class="bg-wolf-fire/10 border-b border-wolf-fire/20 px-8 py-3 flex items-center gap-3">
+                <i class="fas fa-shield-check text-wolf-fire"></i>
+                <p class="text-sm text-gray-300 font-medium">كل خدمة تُنفذ بواسطة فريق متخصص مع متابعة دورية وتقارير احترافية لضمان أفضل النتائج.</p>
+            </div>
+
+            <div class="p-8 overflow-y-auto custom-scrollbar flex-1 relative">
+                <i class="fas fa-chess absolute top-10 right-10 text-[200px] text-white/[0.02] pointer-events-none"></i>
+                <p class="text-gray-400 text-lg leading-relaxed mb-10 max-w-2xl">نساعدك على بناء خطة نمو واضحة تعتمد على تحليل السوق والمنافسين وتحقيق أعلى عائد من التسويق.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-chart-pie text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة تحليل النشاط التجاري" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">تحليل النشاط التجاري</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">فحص شامل لنموذج عملك وتقييم الوضع الحالي للعلامة التجارية في السوق.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-crosshairs text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بدراسة المنافسين" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">دراسة المنافسين</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">مراقبة وتحليل استراتيجيات التسويق لدى منافسيك المباشرين لاستغلال الثغرات في السوق.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-route text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم ببناء خطة تسويقية" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">خطة تسويقية متكاملة</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">رسم خارطة طريق واضحة وقابلة للقياس تحدد الأهداف وتوزع الميزانيات بدقة.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-lightbulb text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم باستراتيجيات زيادة المبيعات" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">استراتيجيات زيادة المبيعات</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">تطوير مسارات البيع (Sales Funnels) وتحسين تجربة العميل لرفع نسب التحويل.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-robot text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بخدمة التحول الرقمي" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">التحول الرقمي والأتمتة</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">إدخال أدوات الذكاء الاصطناعي وأتمتة العمليات لتوفير الوقت والجهد.</p>
+                    </div>
+                    <div class="bg-wolf-gray/50 p-6 rounded-2xl border border-gray-800 hover:border-wolf-fire transition-colors group relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4">
+                            <i class="fas fa-calendar-check text-3xl text-wolf-fire group-hover:scale-110 transition-transform"></i>
+                            <a href="https://wa.me/962782456543?text=مرحباً، مهتم بمتابعة وتطوير الأداء" target="_blank" class="w-10 h-10 rounded-full bg-[#25D366]/10 text-[#25D366] flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors z-20"><i class="fab fa-whatsapp text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">متابعة وتطوير الأداء</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">جلسات استشارية دورية لتقييم النتائج وإجراء التعديلات الاستراتيجية.</p>
+                    </div>
+                </div>
+                <div class="mt-10 text-center">
+                    <a href="https://wa.me/962782456543" target="_blank" class="inline-flex items-center justify-center px-8 py-3 font-bold text-white bg-gradient-to-r from-wolf-fire to-wolf-ember rounded-full shadow-[0_0_20px_rgba(255,81,0,0.4)] hover:shadow-[0_0_30px_rgba(255,81,0,0.6)] hover:scale-105 transition-all">
+                        احجز استشارة استراتيجية <i class="fab fa-whatsapp mr-2 text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            requestAnimationFrame(() => {
+                modal.querySelector('.modal-backdrop').style.opacity = '1';
+                modal.querySelector('.modal-content').style.opacity = '1';
+                modal.querySelector('.modal-content').style.transform = 'scale(1) translateY(0)';
+            });
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.querySelector('.modal-backdrop').style.opacity = '0';
+            modal.querySelector('.modal-content').style.opacity = '0';
+            modal.querySelector('.modal-content').style.transform = 'scale(0.95) translateY(20px)';
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto'; 
+            }, 300);
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const modals = document.querySelectorAll('.fixed.z-\\[100\\]:not(.hidden)');
+                modals.forEach(modal => closeModal(modal.id));
+            }
+        });
+
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+        let cursorVisible = false;
+
+        window.addEventListener('mousemove', (e) => {
+            if(!cursorVisible) {
+                cursorDot.style.opacity = 1;
+                cursorOutline.style.opacity = 1;
+                cursorVisible = true;
+            }
+            const posX = e.clientX;
+            const posY = e.clientY;
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+            cursorOutline.style.left = `${posX}px`;
+            cursorOutline.style.top = `${posY}px`;
+        });
+
+        const interactables = document.querySelectorAll('a, button, .cursor-pointer');
+        interactables.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursorOutline.style.width = '60px';
+                cursorOutline.style.height = '60px';
+                cursorOutline.style.backgroundColor = 'rgba(255, 81, 0, 0.1)';
+                cursorDot.style.backgroundColor = '#ffffff';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursorOutline.style.width = '40px';
+                cursorOutline.style.height = '40px';
+                cursorOutline.style.backgroundColor = 'transparent';
+                cursorDot.style.backgroundColor = '#ff5100';
+            });
+        });
+
+        document.getElementById("cards-container").onmousemove = e => {
+            for(const card of document.getElementsByClassName("spotlight-card")) {
+                const rect = card.getBoundingClientRect(),
+                      x = e.clientX - rect.left,
+                      y = e.clientY - rect.top;
+                card.style.setProperty("--mouse-x", `${x}px`);
+                card.style.setProperty("--mouse-y", `${y}px`);
+            }
+        };
+
+        const revealElements = document.querySelectorAll('.reveal-up');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        const canvas = document.getElementById('network-canvas');
+        const ctx = canvas.getContext('2d');
+        let width, height, particles;
+        
+        function initCanvas() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+            particles = [];
+            const particleCount = Math.floor((width * height) / 15000);
+            for(let i = 0; i < particleCount; i++) {
+                particles.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    vx: (Math.random() - 0.5) * 0.5,
+                    vy: (Math.random() - 0.5) * 0.5,
+                    radius: Math.random() * 1.5 + 0.5
+                });
+            }
+        }
+
+        let mouse = { x: null, y: null, radius: 150 };
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.x;
+            mouse.y = e.y;
+        });
+        window.addEventListener('mouseout', () => {
+            mouse.x = null;
+            mouse.y = null;
+        });
+        window.addEventListener('resize', initCanvas);
+
+        function drawCanvas() {
+            ctx.clearRect(0, 0, width, height);
+            for(let i = 0; i < particles.length; i++) {
+                let p = particles[i];
+                p.x += p.vx;
+                p.y += p.vy;
+                if(p.x < 0 || p.x > width) p.vx *= -1;
+                if(p.y < 0 || p.y > height) p.vy *= -1;
+                
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(255, 81, 0, 0.5)';
+                ctx.fill();
+                
+                for(let j = i + 1; j < particles.length; j++) {
+                    let p2 = particles[j];
+                    let dx = p.x - p2.x;
+                    let dy = p.y - p2.y;
+                    let distance = Math.sqrt(dx * dx + dy * dy);
+                    if(distance < 100) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = `rgba(255, 100, 0, ${0.2 - distance/500})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.stroke();
+                    }
+                }
+                
+                if(mouse.x != null) {
+                    let dxMouse = p.x - mouse.x;
+                    let dyMouse = p.y - mouse.y;
+                    let distanceMouse = Math.sqrt(dxMouse*dxMouse + dyMouse*dyMouse);
+                    if(distanceMouse < mouse.radius) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = `rgba(255, 170, 0, ${0.3 - distanceMouse/mouse.radius})`;
+                        ctx.lineWidth = 1;
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(mouse.x, mouse.y);
+                        ctx.stroke();
+                        p.x -= dxMouse * 0.005;
+                        p.y -= dyMouse * 0.005;
+                    }
+                }
+            }
+            requestAnimationFrame(drawCanvas);
+        }
+
+        initCanvas();
+        drawCanvas();
+
+        function copyCliqAlias() {
+            const alias = 'LSK4758';
+            const tempInput = document.createElement('input');
+            tempInput.value = alias;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            
+            const copyBtn = document.getElementById('copy-btn-text');
+            const parentBtn = copyBtn.parentElement;
+            const originalHTML = copyBtn.innerHTML;
+            
+            copyBtn.innerHTML = '<i class="fas fa-check"></i> تم النسخ';
+            parentBtn.classList.add('bg-green-500/20', 'text-green-500');
+            parentBtn.classList.remove('bg-wolf-fire/10', 'text-wolf-fire');
+            
+            setTimeout(() => {
+                copyBtn.innerHTML = originalHTML;
+                parentBtn.classList.remove('bg-green-500/20', 'text-green-500');
+                parentBtn.classList.add('bg-wolf-fire/10', 'text-wolf-fire');
+            }, 2000);
+        }
+
+        function copyCustomData(elementId, btnId) {
+            const text = document.getElementById(elementId).innerText;
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            
+            const btn = document.getElementById(btnId);
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check text-green-500"></i>';
+            
+            setTimeout(() => {
+                btn.innerHTML = originalHTML;
+            }, 2000);
+        }
+
+        if(document.getElementById('payment-form')) {
+            document.getElementById('payment-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formContainer = document.getElementById('form-container');
+                const btn = this.querySelector('button[type="submit"]');
+                
+                btn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> جاري إرسال الطلب...';
+                btn.classList.add('opacity-75', 'cursor-not-allowed', 'pointer-events-none');
+                
+                setTimeout(() => {
+                    formContainer.innerHTML = `
+                        <div class="bg-wolf-gray/40 p-8 rounded-3xl border border-gray-800 shadow-2xl backdrop-blur-sm h-full flex flex-col items-center justify-center text-center reveal-up active">
+                            <div class="w-24 h-24 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6 border border-green-500/20 shadow-[0_0_30px_rgba(34,197,94,0.15)]">
+                                <i class="fas fa-check text-5xl"></i>
+                            </div>
+                            <h4 class="text-3xl font-black text-white mb-4">تم استلام طلبك بنجاح!</h4>
+                            <p class="text-gray-400 text-lg leading-relaxed mb-8 max-w-sm mx-auto">شكراً لثقتك بـ <span class="text-white font-en font-bold">Wolf LSK</span>. عند إرسال الطلب سيتم التواصل معك فورياً.</p>
+                            <button onclick="location.reload()" class="text-wolf-fire hover:text-white font-bold transition-colors flex items-center gap-2 mx-auto"><i class="fas fa-redo text-sm"></i> إرسال طلب جديد</button>
+                        </div>
+                    `;
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
